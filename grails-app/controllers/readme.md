@@ -11,15 +11,15 @@
 
 via params Property
 
-``{groovy}
+```{groovy}
 def userName = params.userName
 def age = params.int('age') //Params type conversion
-``
+```
 
 ## Redirect a request
 
 - Simple redirect (Same controller, another action)
-``{groovy}
+```{groovy}
 class SampleController {
   def first() {
     // redirect to the "second" action...
@@ -29,8 +29,8 @@ class SampleController {
     // ...
   }
 }
-``
+```
 - Redirect to an Action in another Controller
-``{groovy}
+```{groovy}
   redirect action: "list", controller: "store"
-``
+```
